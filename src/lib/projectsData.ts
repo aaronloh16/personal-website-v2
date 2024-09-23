@@ -1,110 +1,96 @@
 export const projects = {
+  LureLore: {
+    title: "LureLore",
+    image: "/project-images/lurelore-htn.webp",
+    description:
+      "Finalist at Hack the North: AI-powered fishing companion with 3D aquarium and interactive map",
+    link: "https://github.com/danielh-hong/hackthenorth2024",
+    github: "https://github.com/danielh-hong/hackthenorth2024",
+    tags: [
+      "React",
+      "Express.js",
+      "MongoDB",
+      "Gemini API",
+      "Three.js",
+      "Leaflet API",
+    ],
+  },
   "Habits Together": {
     title: "Habits Together",
     image: "/project-images/habits-together.webp",
     description:
-      "Mobile app in development where you can track habits together with friends (I'm leading a team of 9 people)",
+      "Mobile app for tracking habits with friends, featuring social accountability and progress sharing",
     link: "https://habitstogether.app/",
     github: "https://github.com/owengretzinger/habits-together",
     tags: ["React Native", "Firebase", "Expo"],
   },
 
-  "Jazz Musician Website": {
-    title: "Jazz Musician Website",
-    image: "/project-images/jazz-musician-website.webp",
+  "Care Link": {
+    title: "Care Link",
+    image: "/project-images/carelink.webp",
     description:
-      "Website for a professional jazz musician, includes a CMS for editing the website through a dashboard",
-    link: "https://mattausgretzinger.com",
-    github: "https://github.com/owengretzinger/mattausgretzinger.com",
-    tags: ["React", "Decap CMS", "Next.js"],
+      "Developed a web app connecting patients with caregivers to reduce isolation",
+    link: "https://devpost.com/software/carelink",
+    github: "https://github.com/aidanlao/deltahacks",
+    tags: ["React", "Next.js", "OpenAI API"],
   },
 
-  "Simple Terms": {
-    title: "Simple Terms",
-    image: "/project-images/simple-terms.webp",
+  "Google Hungry": {
+    title: "Google Hungry",
+    image: "/project-images/google-hungry.webp",
     description:
-      "Chrome extension that summarizes terms & conditions using AI, built for Hack the North 2023",
-    link: "https://devpost.com/software/simple-terms",
-    github: "https://github.com/owengretzinger/simple-terms",
-    tags: ["React", "Chrome Extensions API", "OpenAI API"],
-  },
-
-  "Room Booking System": {
-    title: "Room Booking System",
-    image: "/project-images/room-booking-system.webp",
-    description:
-      "Innovative McMaster room booking website, built for a human computer interfaces course",
-    link: "https://room-booking-system-blond.vercel.app/",
-    github: "https://github.com/owengretzinger/room-booking-system",
-    tags: ["React", "Next.js"],
+      "Figma prototype created at Western Product Design sprint: Google tool for finding diet-friendly food options nearby",
+    link: "https://www.figma.com/proto/5janvnvkbU86IqvzLnROHb/WFN-Product-Sprint---Google-Hungry?type=design&node-id=208-630&t=yZkaJUT5Z2u9sQfV-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=208%3A630&show-proto-sidebar=1&mode=design",
+    github:
+      "https://www.figma.com/proto/5janvnvkbU86IqvzLnROHb/WFN-Product-Sprint---Google-Hungry?type=design&node-id=208-630&t=yZkaJUT5Z2u9sQfV-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=208%3A630&show-proto-sidebar=1&mode=design",
+    tags: ["Figma"],
   },
 
   "Personal Website v1": {
     title: "Personal Website v1",
     image: "/project-images/personal-website-v1.webp",
-    description: "Previous version of my personal website",
-    link: "https://v1.owengretzinger.com",
-    github: "https://github.com/owengretzinger/personal-website-v1",
-    tags: ["React", "Next.js"],
+    description: "Previous (and very basic) version of my personal website",
+    link: "https://aaronloh16.github.io/Personal-Website/",
+    github: "https://github.com/aaronloh16/Personal-Website",
+    tags: ["HTML", "CSS", "JavaScript"],
   },
 
-  "Education Data for Change": {
-    title: "Education Data for Change",
-    image: "/project-images/education-data-for-change.webp",
+  AccessAbilities: {
+    title: "AccessAbilities",
+    image: "/project-images/access-abilities.webp",
     description:
-      "Website that displays educational data from public schools, built for DeltaHacks 2023",
-    link: "https://owengretzinger.com/education-data-for-change",
-    github: "https://github.com/owengretzinger/education-data-for-change",
-    tags: ["HTML", "JavaScript", "SQL"],
+      "A real-time speech-to-text translation platform that enables communication between people speaking different languages",
+    link: "https://devpost.com/software/accessabilities",
+    github: "https://github.com/vanshwahi01/MS-AI-HACKS/tree/main",
+    tags: ["React", "Gemini API", "Cosmos DB"],
   },
 
-  "Server Insights": {
-    title: "Server Insights",
-    image: "/project-images/server-insights.webp",
+  "Maze-Solver": {
+    title: "Maze Solver",
+    image: "/project-images/maze-solver.webp",
     description:
-      "Discord bot that analyzes server activity and generates graphs, built for TrailHacks 2021 (1st place)",
-    link: "https://devpost.com/software/server-insights",
-    github: "https://github.com/owengretzinger/server-insights",
-    tags: ["Python", "Discord.py", "MatPlotLib"],
+      "Built a Java program that solves mazes using various search algorithms",
+    link: "https://github.com/aaronloh16/a1-maze-runner-aaronloh16",
+    github: "https://github.com/aaronloh16/a1-maze-runner-aaronloh16",
+    tags: ["Java"],
   },
 
-  "Triangle Ball": {
-    title: "Triangle Ball",
-    image: "/project-images/triangle-ball.webp",
-    description:
-      "2D physics-based game where you control a triangle and try to score against an opponent, features advanced bots",
-    link: "https://owengretzinger.itch.io/triangle-ball",
-    github: "https://github.com/owengretzinger/triangle-ball",
-    tags: ["C#", "Unity"],
+  "Emotion Detector": {
+    title: "Emotion Detector",
+    image: "/project-images/emotion-detector.webp",
+    description: "Analyzes text input to determine the emotion of the user",
+    link: "https://github.com/aaronloh16/oaqjp-final-project-emb-ai",
+    github: "https://github.com/aaronloh16/oaqjp-final-project-emb-ai",
+    tags: ["HTML", "CSS", "IBM Watson API"],
   },
 
-  "HTML Resume Template": {
-    title: "HTML Resume Template",
-    image: "/project-images/html-resume-template.webp",
+  "Book Reviews Backend": {
+    title: "Book Reviews App",
+    image: "/project-images/book-reviews.webp",
     description:
-      "Template for creating a mobile-responsive, printable, ATS-friendly resume using TailwindCSS",
-    link: "https://owengretzinger.github.io/html-resume-template/",
-    github: "https://github.com/owengretzinger/html-resume-template",
-    tags: ["HTML", "TailwindCSS"],
-  },
-
-  "Tempestuous Turrets": {
-    title: "Tempestuous Turrets",
-    image: "/project-images/tempestuous-turrets.webp",
-    description:
-      "Local multiplayer game where you control a turret and try to defeat your opponents, built for Hack the North 2022",
-    link: "https://owengretzinger.itch.io/tempestuous-turrets",
-    github: "https://github.com/owengretzinger/tempestuous-turrets",
-    tags: ["C#", "Unity"],
-  },
-
-  "Binary 0101": {
-    title: "Binary 0101",
-    image: "/project-images/binary-0101.webp",
-    description:
-      "Web app that teaches the basics of binary, built for a software design course",
-    link: "https://stabl.rocks/ShowModulePublish?modulePublishId=0a6330dc-6e05-447c-820f-293aca08929a&fullscreen=true",
-    github: "https://github.com/owengretzinger/binary-0101",
-    tags: ["Elm"],
-  },
+      "Developed a RESTful API for a book reviews app using Node.js and Express",
+    link: "https://github.com/aaronloh16/expressBookReviews",
+    github: "https://github.com/aaronloh16/expressBookReviews",
+    tags: ["Express.js"],
+  }
 };

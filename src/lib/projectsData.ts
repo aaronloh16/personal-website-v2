@@ -29,7 +29,7 @@ export const projects = {
     title: "Care Link",
     image: "/project-images/carelink.webp",
     description:
-      "Developed a web app connecting patients with caregivers to reduce isolation",
+      "Developed a web app connecting patients with caregivers to reduce isolation, built for DeltaHacks X",
     link: "https://devpost.com/software/carelink",
     github: "https://github.com/aidanlao/deltahacks",
     tags: ["React", "Next.js", "OpenAI API"],

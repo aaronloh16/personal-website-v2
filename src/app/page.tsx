@@ -85,7 +85,7 @@ export default function Home() {
           </div>
           <LinkWithUpRightArrow
             text="View code for this website & star my projects on GitHub"
-            href="https://github.com/owengretzinger"
+            href="https://github.com/aaronloh16"
           />
         </section>
         <section className="flex w-full flex-col gap-[20px]">
@@ -93,23 +93,23 @@ export default function Home() {
           <div className="flex flex-col gap-[10px]">
             <LinkWithUpRightArrow
               text="Add me on LinkedIn"
-              href="https://www.linkedin.com/in/owengretzinger/"
+              href="https://www.linkedin.com/in/aaron-loh26/"
             />
             <LinkWithUpRightArrow
               text="Add me on GitHub"
-              href="https://github.com/owengretzinger"
+              href="https://github.com/aaronloh16"
             />
-            <ButtonWithClickCounterServer />
+            {/* <ButtonWithClickCounterServer /> */}
           </div>
         </section>
       </div>
       <footer className="mb-[20px] mt-24">
         <Link
-          href="https://github.com/owengretzinger"
+          href="https://github.com/aaronloh16"
           target="_blank"
           className="font-serif text-lg text-grey transition-colors hover:text-darkTeal focus-visible:text-darkTeal"
         >
-          Designed & built by Owen Gretzinger
+          View source code
         </Link>
       </footer>
     </main>

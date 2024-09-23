@@ -13,17 +13,17 @@ export const metadata: Metadata = {
   title: title,
   description: description,
   keywords:
-    "Owen Gretzinger, McMaster University, RBC Amplify, Personal Website, Software Developer, Fullstack Developer, Computer Science, CS Undergrad, Hack the North, DeltaHacks, Arctic Wolf",
-  creator: "Owen Gretzinger",
-  authors: [{ name: "Owen Gretzinger" }],
+    "Aaron Loh, McMaster University, McSCERT, Personal Website, Software Developer, Fullstack Developer, Computer Science, CS Undergrad, Hack the North, LureLore",
+  creator: "Aaron Loh",
+  authors: [{ name: "Aaron Loh" }],
 
   openGraph: {
     title: title,
     description: description,
-    url: "https://owengretzinger.com",
+    url: "https://aaronloh.xyz",
     images: {
       url: "/opengraph-image.webp",
-      alt: "Owen Gretzinger info",
+      alt: "Aaron Loh info",
     },
     locale: "en_US",
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     follow: true,
   },
 
-  metadataBase: new URL("https://owengretzinger.com"),
+  metadataBase: new URL("https://aaronloh.xyz"),
   alternates: {
     canonical: "/",
   },

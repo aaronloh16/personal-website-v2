@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <LinkWithUpRightArrow
             text="View resume for more details"
-            href="/Owen Gretzinger Resume.pdf"
+            href="/Aaron Loh Resume.pdf"
             prefetch={false}
           />
         </section>

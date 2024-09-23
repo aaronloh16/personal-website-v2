@@ -9,9 +9,9 @@ import { experiences } from "@/lib/workExperienceData";
 import Image from "next/image";
 import Link from "next/link";
 
-export const tagline = "CS undergrad, fullstack developer";
+export const tagline = "SE undergrad, fullstack developer";
 export const headline =
-  "I build software with purpose and create impactful solutions through user-centric design";
+  "I build software with purpose, creating impactful solutions through thoughtful, user-centered design";
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
           <div className="flex flex-col gap-5 md:gap-7">
             <div className="flex flex-col">
               <h1 className="font-serif text-4xl leading-9 md:text-6xl md:leading-none">
-                Owen Gretzinger
+                Aaron Loh
               </h1>
               <p className="-mb-2 font-serif text-lg md:text-2xl">{tagline}</p>
             </div>

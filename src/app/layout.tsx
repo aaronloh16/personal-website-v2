@@ -6,7 +6,7 @@ import Script from "next/script";
 import "./globals.css";
 import { headline, tagline } from "./page";
 
-const title = `Owen Gretzinger: ${tagline}`;
+const title = `Aaron Loh: ${tagline}`;
 const description = `${headline}. Learn more about my skills, experience, and contact information.`;
 
 export const metadata: Metadata = {

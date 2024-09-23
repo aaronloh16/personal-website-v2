@@ -35,7 +35,7 @@ export default function Home() {
               </h1>
               <p className="-mb-2 font-serif text-lg md:text-2xl">{tagline}</p>
             </div>
-            <p className="max-w-[330px] text-sm text-grey md:max-w-[420px] md:text-lg">
+            <p className="max-w-[330px] text-sm text-grey md:max-w-[440px] md:text-lg">
               {headline}
             </p>
             <div className="flex flex-col gap-[10px] md:flex-row">

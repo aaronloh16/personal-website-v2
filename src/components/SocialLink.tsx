@@ -18,18 +18,18 @@ type LinkNameToInfoType = {
 
 const linkNameToInfo: LinkNameToInfoType = {
   linkedin: {
-    text: "/in/owengretzinger",
-    href: "https://www.linkedin.com/in/owengretzinger/",
+    text: "/in/aaron-loh26",
+    href: "https://www.linkedin.com/in/aaron-loh26/",
     icon: IconBrandLinkedin,
   },
   email: {
-    text: "owengretzinger@gmail.com",
-    href: "mailto:owengretzinger@gmail.com",
+    text: "aaronloh04@gmail.com",
+    href: "mailto:aaronloh04@gmail.com",
     icon: IconMail,
   },
   github: {
-    text: "/owengretzinger",
-    href: "https://github.com/owengretzinger",
+    text: "/aaronloh16",
+    href: "https://github.com/aaronloh16",
     icon: IconBrandGithub,
   },
 };

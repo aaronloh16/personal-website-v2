@@ -4,7 +4,7 @@ export const projects = {
     image: "/project-images/lurelore-htn.webp",
     description:
       "Finalist at Hack the North: AI-powered fishing companion with 3D aquarium and interactive map",
-    link: "https://github.com/danielh-hong/hackthenorth2024",
+    link: "https://devpost.com/software/lurelore",
     github: "https://github.com/danielh-hong/hackthenorth2024",
     tags: [
       "React",

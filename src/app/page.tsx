@@ -5,6 +5,8 @@ import ProjectCard from "@/components/ProjectCard";
 import SocialLink from "@/components/SocialLink";
 import WorkExperienceCard from "@/components/WorkExperienceCard";
 import { projects } from "@/lib/projectsData";
+import CertificationCard from "@/components/CertificationCard";
+import { certifications } from "@/lib/certificationsData";
 import { experiences } from "@/lib/workExperienceData";
 import Image from "next/image";
 import Link from "next/link";
@@ -88,6 +90,20 @@ export default function Home() {
             href="https://github.com/aaronloh16"
           />
         </section>
+
+        <section className="flex w-full flex-col gap-[20px]">
+          <h1 className="font-serif text-4xl">Certifications</h1>
+          <div className="flex flex-wrap gap-[20px]">
+            {Object.keys(certifications).map((certification) => (
+              <CertificationCard
+                key={certification}
+                certification={certification as keyof typeof certifications}
+              />
+            ))}
+          </div>
+        </section>
+
+
         <section className="flex w-full flex-col gap-[20px]">
           <h1 className="font-serif text-4xl">That&apos;s all</h1>
           <div className="flex flex-col gap-[10px]">

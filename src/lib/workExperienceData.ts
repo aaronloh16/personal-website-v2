@@ -1,8 +1,8 @@
 export const experiences = {
   RBC: {
-    title: "Incoming Software Developer @ RBC Amplify",
-    company: "",
-    date: "incoming May 2025",
+    title: "Software Developer, Amplify",
+    company: "Royal Bank of Canada",
+    date: "Incoming May 2025",
     coop: true,
     image: "/work-experience-images/rbc.webp",
     description:

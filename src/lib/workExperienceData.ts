@@ -1,5 +1,15 @@
 export const experiences = {
   RBC: {
+    title: "Incoming Software Developer @ RBC Amplify",
+    company: "",
+    date: "incoming May 2025",
+    coop: true,
+    image: "/work-experience-images/rbc.webp",
+    description:
+      "Joining RBC Amplify as a Developer, working in a cross-functional team to develop and pitch an innovative product for a real business challenge.",
+    tags: ["not sure yet :)"]
+  },
+  McMaster: {
     title: "Software Research Assistant",
     company: "McSCert",
     date: "May 2023 - Aug 2023",

@@ -57,11 +57,11 @@ export default function Home() {
               />
             ))}
           </div>
-          <LinkWithUpRightArrow
+          {/* <LinkWithUpRightArrow
             text="View resume for more details"
             href="/Aaron Loh Resume.pdf"
             prefetch={false}
-          />
+          /> */}
         </section>
         <section className="flex w-full flex-col gap-[20px]">
           <h1 className="font-serif text-4xl">Projects</h1>

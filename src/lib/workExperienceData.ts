@@ -1,12 +1,22 @@
 export const experiences = {
-  RBC: {
-    title: "Software Developer, Amplify",
+  RBCGlobalPayments: {
+    title: "Software Developer, Global Payments",
     company: "Royal Bank of Canada",
-    date: "May 2025 - Present",
+    date: "Sep 2025 - Present",
     coop: true,
     image: "/work-experience-images/rbc.webp",
     description:
-      "Joining RBC Amplify as a Developer, working in a cross-functional team to develop and pitch an innovative product for a real business challenge.",
+      "working on the global payments team creating ai tools and cloud solutions.",
+    tags: []
+  },
+  RBC: {
+    title: "Software Developer, Amplify",
+    company: "Royal Bank of Canada",
+    date: "May 2025 - June 2025",
+    coop: true,
+    image: "/work-experience-images/rbc.webp",
+    description:
+      "working on ai solutions for fixed income challenges.",
     tags: []
   },
   McMaster: {
@@ -16,7 +26,7 @@ export const experiences = {
     coop: true,
     image: "/work-experience-images/mcscert.webp",
     description:
-      "Developing jPipe, a Java-based tool for analyzing CI/CD pipelines in GitHub Actions, enhancing workflow analysis efficiency.",
+      "developing jpipe, a java-based tool for analyzing ci/cd pipelines in github actions, enhancing workflow analysis efficiency.",
     tags: ["Java", "Software Design", "CI/CD"],
   },
 };

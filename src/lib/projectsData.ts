@@ -2,7 +2,7 @@ export const projects = {
   MurderMysteryAI: {
     title: "Murder Mystery AI",
     image: "/project-images/murder-mystery-ai.webp",
-    description: "a real-time ai-powered murder mystery game where you talk to suspects with your voice, uncover secrets, and solve the case.",
+    description: "a real-time ai-powered murder mystery game where you talk to suspects with your voice, uncover secrets, and solve the case",
     link: "https://github.com/aaronloh16/MurderMysteryAI",
     github: "https://github.com/aaronloh16/MurderMysteryAI",
     tags: ["React", "Next.js", "LiveKit"],

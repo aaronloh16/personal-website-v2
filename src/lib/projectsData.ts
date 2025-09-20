@@ -3,7 +3,7 @@ export const projects = {
     title: "Eva Nowodworski",
     image: "/project-images/staging-professional.webp",
     description: "a portfolio for a staging professional, built with next.js and tailwind",
-    link: "evanowodworski.xyz",
+    link: "https://www.evanowodworski.xyz/",
     github: "https://github.com/aaronloh16/eva-fournier-portfolio",
     tags: ["React", "Next.js", "Tailwind CSS"],
   },

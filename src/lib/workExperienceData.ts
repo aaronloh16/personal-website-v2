@@ -6,8 +6,8 @@ export const experiences = {
     coop: true,
     image: "/work-experience-images/rbc.webp",
     description:
-      "working on the global payments team creating ai tools and cloud solutions",
-    tags: ["java"]
+      "working on the global payments team creating AI tools and cloud solutions",
+    tags: ["Java", "Kafka", "MongoDB"]
   },
   RBC: {
     title: "Software Developer, Amplify",
@@ -16,8 +16,8 @@ export const experiences = {
     coop: true,
     image: "/work-experience-images/rbc.webp",
     description:
-      "worked on ai solutions for fixed income challenges",
-    tags: ["react", "node.js"]
+      "worked on AI solutions for fixed income challenges",
+    tags: ["React", "Node.js"]
   },
   McMaster: {
     title: "Software Research Assistant",
@@ -26,7 +26,7 @@ export const experiences = {
     coop: true,
     image: "/work-experience-images/mcscert.webp",
     description:
-      "developing jpipe, a java-based tool for analyzing ci/cd pipelines in github actions, enhancing workflow analysis efficiency",
-    tags: ["java", "software design", "CI/CD"],
+      "developing JPipe, a Java-based tool for analyzing CI/CD pipelines in GitHub Actions, enhancing workflow analysis efficiency",
+    tags: ["Java", "Software Design", "CI/CD"],
   },
 };

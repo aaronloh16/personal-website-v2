@@ -1,8 +1,16 @@
 export const projects = {
+  ShopX: {
+    title: "ShopX",
+    image: "/project-images/shopx.webp",
+    description: "claude code, but for shopping: a command-line tool that lets you shop online while looking like you're doing development work",
+    link: "https://devpost.com/software/shop-x",
+    github: "https://github.com/shopcli/shopx",
+    tags: ["TypeScript", "React", "Playwright", "OpenRouter API"],
+  },
   "portfolio for a staging professional": {
     title: "Eva Nowodworski",
     image: "/project-images/staging-professional.webp",
-    description: "a portfolio for a staging professional, built with next.js and tailwind",
+    description: "a portfolio for a staging professional, built with Next.js and Tailwind CSS",
     link: "https://www.evanowodworski.xyz/",
     github: "https://github.com/aaronloh16/eva-fournier-portfolio",
     tags: ["React", "Next.js", "Tailwind CSS"],
@@ -10,7 +18,7 @@ export const projects = {
   MurderMysteryAI: {
     title: "Murder Mystery AI",
     image: "/project-images/murder-mystery-ai.webp",
-    description: "a real-time ai-powered murder mystery game where you talk to suspects with your voice, uncover secrets, and solve the case",
+    description: "a real-time AI-powered murder mystery game where you talk to suspects with your voice, uncover secrets, and solve the case",
     link: "https://github.com/aaronloh16/MurderMysteryAI",
     github: "https://github.com/aaronloh16/MurderMysteryAI",
     tags: ["React", "Next.js", "LiveKit"],
@@ -19,7 +27,7 @@ export const projects = {
     title: "LureLore",
     image: "/project-images/lurelore-htn.webp",
     description:
-      "finalist at hack the north: ai-powered fishing companion with 3d aquarium and interactive map",
+      "finalist at Hack the North: AI-powered fishing companion with 3D aquarium and interactive map",
     link: "https://devpost.com/software/lurelore",
     github: "https://github.com/danielh-hong/hackthenorth2024",
     tags: [
@@ -45,7 +53,7 @@ export const projects = {
     title: "Care Link",
     image: "/project-images/carelink.webp",
     description:
-      "developed a web app connecting patients with caregivers to reduce isolation, built for deltahacks x",
+      "developed a web app connecting patients with caregivers to reduce isolation, built for DeltaHacks X",
     link: "https://devpost.com/software/carelink",
     github: "https://github.com/aidanlao/deltahacks",
     tags: ["React", "Next.js", "OpenAI API"],
@@ -55,7 +63,7 @@ export const projects = {
     title: "Google Hungry",
     image: "/project-images/google-hungry.webp",
     description:
-      "figma prototype created at western product design sprint: google tool for finding diet-friendly food options nearby",
+      "Figma prototype created at Western Product Design Sprint: Google tool for finding diet-friendly food options nearby",
     link: "https://www.figma.com/proto/5janvnvkbU86IqvzLnROHb/WFN-Product-Sprint---Google-Hungry?type=design&node-id=208-630&t=yZkaJUT5Z2u9sQfV-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=208%3A630&show-proto-sidebar=1&mode=design",
     github:
       "https://www.figma.com/proto/5janvnvkbU86IqvzLnROHb/WFN-Product-Sprint---Google-Hungry?type=design&node-id=208-630&t=yZkaJUT5Z2u9sQfV-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=208%3A630&show-proto-sidebar=1&mode=design",
@@ -85,7 +93,7 @@ export const projects = {
     title: "Maze Solver",
     image: "/project-images/maze-solver.webp",
     description:
-      "built a java program that solves mazes using various search algorithms",
+      "built a Java program that solves mazes using various search algorithms",
     link: "https://github.com/aaronloh16/a1-maze-runner-aaronloh16",
     github: "https://github.com/aaronloh16/a1-maze-runner-aaronloh16",
     tags: ["Java"],
@@ -104,7 +112,7 @@ export const projects = {
     title: "Book Reviews App",
     image: "/project-images/book-reviews.webp",
     description:
-      "developed a restful api for a book reviews app using node.js and express",
+      "developed a RESTful API for a book reviews app using Node.js and Express.js",
     link: "https://github.com/aaronloh16/expressBookReviews",
     github: "https://github.com/aaronloh16/expressBookReviews",
     tags: ["Express.js"],

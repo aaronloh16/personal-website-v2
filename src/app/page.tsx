@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export const tagline = "SE undergrad, fullstack developer";
 export const headline =
-  "I build software with purpose, creating impactful solutions through thoughtful, user-centered design";
+  "third-year software engineering student at McMaster working on payment infrastructure and AI systems at RBC. interested in using technology to make financial services more accessible";
 
 export default function Home() {
   return (
@@ -37,9 +37,9 @@ export default function Home() {
               </h1>
               <p className="-mb-2 font-serif text-lg md:text-2xl">{tagline}</p>
             </div>
-            {/* <p className="max-w-[330px] text-sm text-grey md:max-w-[440px] md:text-lg">
+            <p className="max-w-[330px] text-sm text-grey md:max-w-[440px] md:text-lg">
               {headline}
-            </p> */}
+            </p>
             <div className="flex flex-col gap-[10px] md:flex-row">
               <SocialLink link="linkedin" />
               <SocialLink link="email" />

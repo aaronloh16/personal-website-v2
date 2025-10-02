@@ -4,7 +4,7 @@ export const certifications = {
       provider: "IBM",
       date: "October 2023",
       image: "/certification-images/ibm.webp",
-      description: "explored the full-stack universe. now I have slightly more idea what I'm doing when I break things :)",
+      description: "gained hands-on experience with full-stack development, containerization, and cloud deployment",
       link: "https://coursera.org/share/9bfa826c3e51cfe6a76c8f235872669b",
       tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "React", "Cloud Computing", "Containers", "Kubernetes"],
     },
@@ -13,7 +13,7 @@ export const certifications = {
       provider: "Amazon Web Services",
       date: "In Progress",
       image: "/certification-images/aws.webp", // You can add an AWS logo later
-      description: "currently working through AWS certification courses - we'll see if I actually finish them :)",
+      description: "building cloud and AI/ML knowledge to complement my development work",
       link: "", // No link until completed
       tags: ["AWS", "Cloud Computing", "AI/ML"],
     },

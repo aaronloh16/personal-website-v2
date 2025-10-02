@@ -1,28 +1,4 @@
 export const projects = {
-  ShopX: {
-    title: "ShopX",
-    image: "/project-images/shopx.webp",
-    description: "claude code, but for shopping: a command-line tool that lets you shop online while looking like you're doing development work",
-    link: "https://devpost.com/software/shop-x",
-    github: "https://github.com/shopcli/shopx",
-    tags: ["TypeScript", "React", "Playwright", "OpenRouter API"],
-  },
-  "portfolio for a staging professional": {
-    title: "Eva Nowodworski",
-    image: "/project-images/staging-professional.webp",
-    description: "a portfolio for a staging professional, built with Next.js and Tailwind CSS",
-    link: "https://www.evanowodworski.xyz/",
-    github: "https://github.com/aaronloh16/eva-fournier-portfolio",
-    tags: ["React", "Next.js", "Tailwind CSS"],
-  },
-  MurderMysteryAI: {
-    title: "Murder Mystery AI",
-    image: "/project-images/murder-mystery-ai.webp",
-    description: "a real-time AI-powered murder mystery game where you talk to suspects with your voice, uncover secrets, and solve the case",
-    link: "https://github.com/aaronloh16/MurderMysteryAI",
-    github: "https://github.com/aaronloh16/MurderMysteryAI",
-    tags: ["React", "Next.js", "LiveKit"],
-  },
   LureLore: {
     title: "LureLore",
     image: "/project-images/lurelore-htn.webp",
@@ -39,16 +15,38 @@ export const projects = {
       "Leaflet API",
     ],
   },
-  "Habits Together": {
-    title: "Habits Together",
-    image: "/project-images/habits-together.webp",
-    description:
-      "mobile app for tracking habits with friends, featuring social accountability and progress sharing",
-    link: "https://habitstogether.app/",
-    github: "https://github.com/owengretzinger/habits-together",
-    tags: ["React Native", "Firebase", "Expo"],
+  MurderMysteryAI: {
+    title: "Murder Mystery AI",
+    image: "/project-images/murder-mystery-ai.webp",
+    description: "a real-time AI-powered murder mystery game where you talk to suspects with your voice, uncover secrets, and solve the case",
+    link: "https://github.com/aaronloh16/MurderMysteryAI",
+    github: "https://github.com/aaronloh16/MurderMysteryAI",
+    tags: ["React", "Next.js", "LiveKit"],
   },
-
+  ShopX: {
+    title: "ShopX",
+    image: "/project-images/shopx.webp",
+    description: "claude code, but for shopping: a command-line tool that lets you shop online while looking like you're doing development work",
+    link: "https://devpost.com/software/shop-x",
+    github: "https://github.com/shopcli/shopx",
+    tags: ["TypeScript", "React", "Playwright", "OpenRouter API"],
+  },
+  "Portfolio for Stager": {
+    title: "Portfolio for Stager",
+    image: "/project-images/staging-professional.webp",
+    description: "a portfolio for a staging professional, built with Next.js and Tailwind CSS",
+    link: "https://www.evanowodworski.xyz/",
+    github: "https://github.com/aaronloh16/eva-fournier-portfolio",
+    tags: ["React", "Next.js", "Tailwind CSS"],
+  },
+  "Glassbox LLM": {
+    title: "Glassbox LLM",
+    image: "/project-images/staging-professional.webp",
+    description: "open-source project making LLM models transparent and interpretable through visualization and analysis tools",
+    link: "https://github.com/gdsc-mcmaster/glassbox-llm",
+    github: "https://github.com/gdsc-mcmaster/glassbox-llm",
+    tags: ["Python", "PyTorch", "Transformers", "Open Source"],
+  },
   "Care Link": {
     title: "Care Link",
     image: "/project-images/carelink.webp",
@@ -77,6 +75,16 @@ export const projects = {
     link: "https://aaronloh16.github.io/Personal-Website/",
     github: "https://github.com/aaronloh16/Personal-Website",
     tags: ["HTML", "CSS", "JavaScript"],
+  },
+
+  "Habits Together": {
+    title: "Habits Together",
+    image: "/project-images/habits-together.webp",
+    description:
+      "mobile app for tracking habits with friends, featuring social accountability and progress sharing",
+    link: "https://habitstogether.app/",
+    github: "https://github.com/owengretzinger/habits-together",
+    tags: ["React Native", "Firebase", "Expo"],
   },
 
   AccessAbilities: {

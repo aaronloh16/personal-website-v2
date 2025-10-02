@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export const tagline = "SE undergrad, fullstack developer";
 export const headline =
-  "Third-year software engineering student at McMaster researching llm interpretability and building payment infrastructure and AI systems at RBC";
+  "Third-year software engineering student at McMaster researching LLM interpretability and building payment infrastructure and AI systems at RBC";
 
 export default function Home() {
   return (

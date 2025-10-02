@@ -1,13 +1,13 @@
 export const experiences = {
   GlassboxLLM: {
-    title: "Open Source Team Developer",
+    title: "Open Source Team",
     company: "Google Developer Student Clubs",
     date: "Sep 2025 - Present",
     coop: false,
     image: "/work-experience-images/gdsc.webp", 
     description:
-      "Glassbox LLM Project- making LLM's transparent and interpretable",
-    tags: ["python", "PyTorch", "Transformers"]
+      "researching LLM interpretability methods and building open-source Python library for model explainability",
+    tags: ["Python", "PyTorch", "Transformers"]
   },
   RBCGlobalPayments: {
     title: "Software Developer, Global Payments",

@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export const tagline = "SE undergrad, fullstack developer";
 export const headline =
-  "third-year software engineering student at McMaster working on payment infrastructure and AI systems at RBC. interested in using technology to make financial services more accessible";
+  "Third-year software engineering student at McMaster researching llm interpretability and building payment infrastructure and AI systems at RBC";
 
 export default function Home() {
   return (
@@ -30,14 +30,14 @@ export default function Home() {
               priority={true}
             />
           </div>
-          <div className="flex flex-col gap-5 md:gap-7">
+          <div className="flex flex-col gap-4 md:gap-6">
             <div className="flex flex-col">
               <h1 className="font-serif text-4xl leading-9 md:text-6xl md:leading-none">
                 Aaron Loh
               </h1>
               <p className="-mb-2 font-serif text-lg md:text-2xl">{tagline}</p>
             </div>
-            <p className="max-w-[330px] text-sm text-grey md:max-w-[440px] md:text-lg">
+            <p className="max-w-[400px] text-sm leading-relaxed text-grey md:max-w-[500px] md:text-base md:leading-relaxed">
               {headline}
             </p>
             <div className="flex flex-col gap-[10px] md:flex-row">
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </section>
         <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-4xl">Work Experience</h1>
+          <h1 className="font-serif text-3xl md:text-4xl">Work Experience</h1>
           <div className="flex flex-col gap-[20px] md:flex-row md:flex-wrap">
             {Object.keys(experiences).map((experience) => (
               <WorkExperienceCard
@@ -64,7 +64,7 @@ export default function Home() {
           /> */}
         </section>
         <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-4xl">Projects</h1>
+          <h1 className="font-serif text-3xl md:text-4xl">Projects</h1>
           <div className="flex flex-wrap gap-[20px]">
             {Object.keys(projects)
               .slice(0, 5)
@@ -92,7 +92,7 @@ export default function Home() {
         </section>
 
         <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-4xl">Certifications</h1>
+          <h1 className="font-serif text-3xl md:text-4xl">Certifications</h1>
           <div className="flex flex-wrap gap-[20px]">
             {Object.keys(certifications).map((certification) => (
               <CertificationCard
@@ -105,7 +105,7 @@ export default function Home() {
 
 
         <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-4xl">That&apos;s all</h1>
+          <h1 className="font-serif text-3xl md:text-4xl">That&apos;s all</h1>
           <div className="flex flex-col gap-[10px]">
             <LinkWithUpRightArrow
               text="Add me on LinkedIn"

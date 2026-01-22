@@ -1,12 +1,32 @@
 export const experiences = {
+  RBCCashManagement: {
+    title: "Software Developer, Cash Management Technology",
+    company: "Royal Bank of Canada",
+    date: "Jan 2026 - Present",
+    coop: true,
+    image: "/work-experience-images/rbc.webp",
+    description:
+      "building a modern digital experience for commercial clients to manage their cash management needs",
+    tags: ["Angular", "Spring Boot"]
+  },
+  Boardy: {
+    title: "Fellow",
+    company: "boardy.ai",
+    date: "Oct 2024 - Dec 2024",
+    coop: false,
+    image: "/work-experience-images/boardy.webp",
+    description:
+      "selected for the inaugural cohort of the boardy fellowship, working closely with the team on product and AI initiatives",
+    tags: ["AI", "Product"]
+  },
   GlassboxLLM: {
     title: "Open Source Team",
-    company: "Google Developer Student Clubs",
+    company: "Google Developer Groups McMaster",
     date: "Sep 2025 - Present",
     coop: false,
-    image: "/work-experience-images/gdsc.webp", 
+    image: "/work-experience-images/gdsc.webp",
     description:
-      "researching LLM interpretability methods and building open-source Python library for model explainability",
+      "researching LLM interpretability methods and building open-source python library for model explainability",
     tags: ["Python", "PyTorch", "Transformers"]
   },
   RBCGlobalPayments: {

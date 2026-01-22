@@ -40,10 +40,11 @@ export default function Home() {
             <p className="max-w-[400px] text-sm leading-relaxed text-grey md:max-w-[500px] md:text-base md:leading-relaxed">
               {headline}
             </p>
-            <div className="flex flex-col gap-[10px] md:flex-row">
+            <div className="flex flex-col gap-[10px] md:flex-row md:flex-wrap">
               <SocialLink link="linkedin" />
               <SocialLink link="email" />
               <SocialLink link="github" />
+              <SocialLink link="x" />
             </div>
           </div>
         </section>

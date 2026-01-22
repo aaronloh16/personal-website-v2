@@ -2,11 +2,12 @@ import {
   Icon,
   IconBrandGithub,
   IconBrandLinkedin,
+  IconBrandX,
   IconMail,
 } from "@tabler/icons-react";
 import Link from "next/link";
 
-type SocialLink = "linkedin" | "email" | "github";
+type SocialLink = "linkedin" | "email" | "github" | "x";
 
 type LinkNameToInfoType = {
   [key in SocialLink]: {
@@ -31,6 +32,11 @@ const linkNameToInfo: LinkNameToInfoType = {
     text: "/aaronloh16",
     href: "https://github.com/aaronloh16",
     icon: IconBrandGithub,
+  },
+  x: {
+    text: "@AaronLoh_",
+    href: "https://x.com/aaronloh_",
+    icon: IconBrandX,
   },
 };
 

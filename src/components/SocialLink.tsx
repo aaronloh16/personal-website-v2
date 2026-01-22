@@ -34,7 +34,7 @@ const linkNameToInfo: LinkNameToInfoType = {
     icon: IconBrandGithub,
   },
   x: {
-    text: "@AaronLoh_",
+    text: "@aaronloh_",
     href: "https://x.com/aaronloh_",
     icon: IconBrandX,
   },

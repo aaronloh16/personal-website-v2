@@ -23,6 +23,7 @@ const config: Config = {
     fontFamily: {
       serif: ["var(--font-crimson-pro)"],
       sans: ["var(--font-inter)"],
+      mono: ["var(--font-jetbrains-mono)"],
     },
     extend: {},
   },

@@ -1,7 +1,7 @@
 import LightDarkModeToggle from "@/components/LightDarkModeToggle";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import { Crimson_Pro, Inter } from "next/font/google";
+import { Crimson_Pro, Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { headline, tagline } from "./page";
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: title,
   description: description,
   keywords:
-    "Aaron Loh, McMaster University, McSCERT, Personal Website, Software Developer, Fullstack Developer, Computer Science, CS Undergrad, Hack the North, LureLore",
+    "Aaron Loh, Stan Fellow, Developer Advocate, Building in Public, AI Stack Radar, Community, Product, McMaster University, Software Developer, Hack the North",
   creator: "Aaron Loh",
   authors: [{ name: "Aaron Loh" }],
 
@@ -52,6 +52,12 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const jetbrains_mono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jetbrains-mono",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -61,7 +67,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${crimson_pro.variable} ${inter.variable}`}
+      className={`${crimson_pro.variable} ${inter.variable} ${jetbrains_mono.variable}`}
     >
       <Script
         src="https://app.tinyanalytics.io/pixel/DbzDhIpSbsBIoTz9"

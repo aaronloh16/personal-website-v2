@@ -1,4 +1,13 @@
 export const projects = {
+  "AI Stack Radar": {
+    title: "AI Stack Radar",
+    image: "/project-images/ai-stack-radar.webp",
+    description:
+      "helping people keep up with the fast-moving AI landscape — curating and tracking the tools, frameworks, and models that matter",
+    link: "",
+    github: "",
+    tags: ["AI", "Next.js", "Building in Public"],
+  },
   ShopX: {
     title: "ShopX",
     image: "/project-images/shopx.webp",

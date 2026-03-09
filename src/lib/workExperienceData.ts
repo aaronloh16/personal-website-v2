@@ -1,4 +1,14 @@
 export const experiences = {
+  StanFellow: {
+    title: "Fellow",
+    company: "Stan",
+    date: "2026 - Present",
+    coop: false,
+    image: "/work-experience-images/stan.webp",
+    description:
+      "selected as a Stan Fellow — exploring developer advocacy, community building, and the intersection of AI and product",
+    tags: ["Developer Advocacy", "Community", "AI", "Product"],
+  },
   RBCCashManagement: {
     title: "Software Developer, Cash Management Technology",
     company: "Royal Bank of Canada",

@@ -1,7 +1,7 @@
 export default function TechnologyTag({ text }: { text: string }) {
   return (
-    <div className="rounded-full bg-lightTeal px-3 py-1 text-xs text-darkTeal">
+    <span className="rounded bg-lightTeal/60 px-2 py-0.5 text-xs text-darkTeal">
       {text}
-    </div>
+    </span>
   );
 }

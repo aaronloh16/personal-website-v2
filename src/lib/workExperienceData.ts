@@ -1,4 +1,14 @@
 export const experiences = {
+  StanFellow: {
+    title: "Fellow",
+    company: "Stan",
+    date: "Mar 2026 - Present",
+    coop: false,
+    image: "/work-experience-images/stan.webp",
+    description:
+      "building in public as part of the first-ever Stan Fellow cohort, sharing the journey, creating content, and connecting with builders and creators along the way",
+    tags: ["Community", "Growth", "Content"],
+  },
   RBCCashManagement: {
     title: "Software Developer, Cash Management Technology",
     company: "Royal Bank of Canada",
@@ -16,8 +26,8 @@ export const experiences = {
     coop: false,
     image: "/work-experience-images/boardy.webp",
     description:
-      "selected for the inaugural cohort of the boardy fellowship, working closely with the team on product and AI initiatives",
-    tags: ["AI", "Product"]
+      "part of the inaugural Boardy Fellow cohort, building community around boardy's AI networking platform and connecting with founders and investors",
+    tags: ["AI", "Community"],
   },
   GlassboxLLM: {
     title: "Open Source Team",
@@ -46,7 +56,7 @@ export const experiences = {
     coop: true,
     image: "/work-experience-images/rbc.webp",
     description:
-      "worked on AI solutions for fixed income challenges",
+      "worked on AI solutions for fixed income challenges during RBC Amplify",
     tags: ["React", "Node.js"]
   },
   McMaster: {

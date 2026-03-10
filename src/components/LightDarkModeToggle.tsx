@@ -21,12 +21,12 @@ export default function LightDarkModeToggle() {
     <button
       onClick={() => setTheme(actualTheme === "light" ? "dark" : "light")}
       aria-label={`Switch to ${actualTheme === "light" ? "dark" : "light"} mode`}
-      className="p-4"
+      className="p-4 text-grey transition-colors hover:text-black"
     >
       {actualTheme === "dark" ? (
-        <IconSun size={32} stroke={1.5} className="text-black" />
+        <IconSun size={18} stroke={1.5} />
       ) : (
-        <IconMoon size={32} stroke={1.5} className="text-black" />
+        <IconMoon size={18} stroke={1.5} />
       )}
     </button>
   );

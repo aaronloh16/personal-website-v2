@@ -1,19 +1,19 @@
 import LightDarkModeToggle from "@/components/LightDarkModeToggle";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import { Crimson_Pro, Inter } from "next/font/google";
+import { Crimson_Pro, DM_Sans, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { headline, tagline } from "./page";
 
-const title = `Aaron Loh: ${tagline}`;
-const description = `${headline}. Learn more about my skills, experience, and contact information.`;
+const title = `Aaron Loh — ${tagline}`;
+const description = headline;
 
 export const metadata: Metadata = {
   title: title,
   description: description,
   keywords:
-    "Aaron Loh, McMaster University, McSCERT, Personal Website, Software Developer, Fullstack Developer, Computer Science, CS Undergrad, Hack the North, LureLore",
+    "Aaron Loh, Software Engineer, Community, Growth, Distribution, McMaster University, Stan, RBC, Full Stack Developer, Hack the North",
   creator: "Aaron Loh",
   authors: [{ name: "Aaron Loh" }],
 
@@ -46,10 +46,16 @@ const crimson_pro = Crimson_Pro({
   variable: "--font-crimson-pro",
 });
 
-const inter = Inter({
+const dm_sans = DM_Sans({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-dm-sans",
+});
+
+const jetbrains_mono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jetbrains-mono",
 });
 
 export default function RootLayout({
@@ -61,13 +67,13 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${crimson_pro.variable} ${inter.variable}`}
+      className={`${crimson_pro.variable} ${dm_sans.variable} ${jetbrains_mono.variable}`}
     >
       <Script
         src="https://app.tinyanalytics.io/pixel/DbzDhIpSbsBIoTz9"
         strategy="lazyOnload"
       />
-      <body>
+      <body className="font-sans">
         <ThemeProvider disableTransitionOnChange attribute="data-mode">
           <div className="relative">
             <div className="fixed right-0 top-0 z-20">

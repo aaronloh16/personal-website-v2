@@ -2,12 +2,12 @@ export const experiences = {
   StanFellow: {
     title: "Fellow",
     company: "Stan",
-    date: "2026 - Present",
+    date: "Mar 2026 - Present",
     coop: false,
     image: "/work-experience-images/stan.webp",
     description:
-      "building community growth programs — leading creator initiatives and flagship events that connect people with the product",
-    tags: ["Community", "Growth", "Events", "Product"],
+      "building in public as a Stan Fellow — sharing the journey, creating content, and connecting with builders and creators along the way",
+    tags: ["Community", "Growth", "Content"],
   },
   RBCCashManagement: {
     title: "Software Developer, Cash Management Technology",
@@ -26,8 +26,8 @@ export const experiences = {
     coop: false,
     image: "/work-experience-images/boardy.webp",
     description:
-      "selected for the inaugural cohort of the boardy fellowship, working closely with the team on product and AI initiatives",
-    tags: ["AI", "Product"]
+      "selected from 1,000+ applicants for the inaugural cohort — promoting boardy's AI networking platform and engaging with the community",
+    tags: ["AI", "Community"],
   },
   GlassboxLLM: {
     title: "Open Source Team",
@@ -56,7 +56,7 @@ export const experiences = {
     coop: true,
     image: "/work-experience-images/rbc.webp",
     description:
-      "worked on AI solutions for fixed income challenges",
+      "selected from 13,000+ applicants — worked on AI solutions for fixed income challenges",
     tags: ["React", "Node.js"]
   },
   McMaster: {

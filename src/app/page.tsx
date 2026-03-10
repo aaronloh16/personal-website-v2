@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export const tagline = "Software Engineer";
 export const headline =
-  "Software engineer interested in growth, product, and distribution.";
+  "Software engineer interested in growth and distribution.";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
           <p className="mt-5 max-w-md text-base leading-relaxed md:text-lg md:leading-relaxed">
             <span className="font-medium">Software engineer.</span>{" "}
             <span className="text-grey">
-              Curious about growth, product, and distribution.
+              Curious about growth and distribution.
             </span>
           </p>
           <div className="mt-3">

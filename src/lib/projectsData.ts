@@ -5,7 +5,7 @@ export const projects = {
     description:
       "helping people keep up with the fast-moving AI landscape — curating and tracking the tools, frameworks, and models that matter",
     link: "",
-    github: "",
+    github: "https://github.com/aaronloh16/ai-stack-radar",
     tags: ["AI", "Next.js", "Building in Public"],
   },
   ShopX: {

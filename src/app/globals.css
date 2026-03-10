@@ -3,24 +3,24 @@
 @tailwind utilities;
 
 :root {
-  --color-black: 28 32 36;
-  --color-grey: 95 97 108;
+  --color-black: 23 23 23;
+  --color-grey: 115 115 115;
   --color-orange: 239 89 34;
-  --color-lightGrey: 218 218 218;
-  --color-darkTeal: 0 133 115;
-  --color-lightTeal: 204 243 234;
-  --color-white: 255 255 255;
+  --color-lightGrey: 232 230 227;
+  --color-darkTeal: 0 120 100;
+  --color-lightTeal: 232 244 240;
+  --color-white: 252 251 249;
   background-color: rgb(var(--color-white));
 }
 
 [data-mode="dark"] {
-  --color-black: 220 222 225;
-  --color-grey: 190 190 190;
-  --color-orange: 239 89 34;
-  --color-lightGrey: 50 50 50;
-  --color-darkTeal: 84 212 191;
-  --color-lightTeal: 38 50 52;
-  --color-white: 18 21 23;
+  --color-black: 228 228 225;
+  --color-grey: 148 148 148;
+  --color-orange: 245 100 50;
+  --color-darkTeal: 72 198 178;
+  --color-lightTeal: 25 38 35;
+  --color-lightGrey: 35 35 35;
+  --color-white: 12 12 13;
   background-color: rgb(var(--color-white));
 }
 
@@ -30,11 +30,17 @@
   }
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.animate-blink {
-  animation: blink 1s step-end infinite;
+.animate-fade-up {
+  animation: fadeUp 0.6s ease-out both;
 }

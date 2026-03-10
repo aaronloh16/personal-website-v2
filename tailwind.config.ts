@@ -22,7 +22,7 @@ const config: Config = {
     },
     fontFamily: {
       serif: ["var(--font-crimson-pro)"],
-      sans: ["var(--font-inter)"],
+      sans: ["var(--font-dm-sans)"],
       mono: ["var(--font-jetbrains-mono)"],
     },
     extend: {},

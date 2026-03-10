@@ -2,7 +2,6 @@ import { certifications } from "@/lib/certificationsData";
 import { IconArrowUpRight } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
-import TechnologyTag from "./TechnologyTag";
 
 export default function CertificationCard({
   certification,
@@ -12,43 +11,40 @@ export default function CertificationCard({
   const info = certifications[certification];
 
   return (
-    <div className="relative w-full rounded-[10px] border border-lightGrey text-sm transition-colors hover:bg-lightGrey/20 focus-visible:bg-lightGrey/20 md:h-[251px] md:min-h-[251px] md:w-[300px] md:min-w-[300px] dark:hover:bg-lightGrey/30 dark:focus-visible:bg-lightGrey/30">
-      <div className="flex flex-col gap-[20px] px-[20px] py-[20px]">
-        {/* image & date */}
-        <div className="flex justify-between text-grey">
-          <Image
-            src={info.image}
-            width={32}
-            height={32}
-            alt={`${info.title} logo`}
-            className="h-[32px] w-[32px] rounded border border-lightGrey"
-          />
-          <span>{info.date}</span>
-        </div>
-        {/* title & provider */}
-        <div className="flex flex-col gap-[6px]">
+    <div className="-mx-4 rounded-lg px-4 py-5 transition-colors hover:bg-lightGrey/20">
+      <div className="flex items-start gap-3">
+        <Image
+          src={info.image}
+          width={24}
+          height={24}
+          alt={`${info.provider} logo`}
+          className="mt-0.5 h-6 w-6 rounded"
+        />
+        <div>
           {info.link ? (
             <Link
               href={info.link}
               target="_blank"
               rel="noreferrer noopener"
-              className="group/link flex items-center gap-[2px] font-semibold text-black transition-all hover:text-darkTeal focus-visible:text-darkTeal"
+              className="group/link inline-flex items-center gap-1 text-sm font-medium text-black transition-colors hover:text-darkTeal"
             >
-              <span className="absolute inset-0" />
-              <span>{info.title}</span>
+              {info.title}
               <IconArrowUpRight
-                size={16}
+                size={14}
                 stroke={1.5}
-                className="transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1"
+                className="opacity-0 transition-all group-hover/link:opacity-100"
               />
             </Link>
           ) : (
-            <span className="font-semibold text-black">{info.title}</span>
+            <span className="text-sm font-medium">{info.title}</span>
           )}
-          <p className="leading-5 text-grey">{info.provider}</p>
+          <p className="text-sm text-grey">
+            {info.provider} · {info.date}
+          </p>
+          <p className="mt-1 text-sm leading-relaxed text-grey">
+            {info.description}
+          </p>
         </div>
-        {/* description */}
-        <p className="leading-5 text-grey">{info.description}</p>
       </div>
     </div>
   );

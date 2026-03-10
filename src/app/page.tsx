@@ -1,63 +1,68 @@
+import CertificationCard from "@/components/CertificationCard";
 import HiddenProjects from "@/components/HiddenProjects";
 import LinkWithUpRightArrow from "@/components/LinkWithUpRightArrow";
 import ProjectCard from "@/components/ProjectCard";
 import SocialLink from "@/components/SocialLink";
 import StatusBadge from "@/components/StatusBadge";
 import WorkExperienceCard from "@/components/WorkExperienceCard";
-import { projects } from "@/lib/projectsData";
-import CertificationCard from "@/components/CertificationCard";
 import { certifications } from "@/lib/certificationsData";
+import { projects } from "@/lib/projectsData";
 import { experiences } from "@/lib/workExperienceData";
-import Image from "next/image";
 import Link from "next/link";
 
-export const tagline = "Stan Fellow, builder, dev advocate";
+export const tagline = "Software Engineer";
 export const headline =
-  "Building in public — passionate about developer advocacy, community, and making AI accessible. Currently exploring the intersection of AI tooling and product.";
+  "Software engineer interested in growth, product, and distribution.";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-white bg-gradient-to-b from-orange/5 via-transparent to-darkTeal/5 p-4 pb-0 text-black md:p-10 md:pb-0 md:pr-0 lg:p-16 lg:pb-0 lg:pr-0 xl:p-24 xl:pb-0 dark:from-orange/3 dark:to-darkTeal/3">
-      <div className="z-10 flex w-full flex-col items-center justify-between gap-[60px] text-sm md:max-w-5xl">
-        <section className="flex w-full flex-col gap-2 pt-[40px] md:flex-row md:gap-[20px]">
-          <div className="relative h-[64px] w-[64px] md:h-[108px] md:w-[108px]">
-            <Image
-              src="/pfp.webp"
-              sizes="(max-width: 768px) 64px, 108px"
-              className="aspect-square rounded-[10px] border border-lightGrey"
-              alt="Headshot profile picture"
-              fill={true}
-              priority={true}
-            />
+    <main className="min-h-screen bg-white text-black">
+      <div className="h-[3px] bg-orange" />
+      <div className="mx-auto max-w-2xl px-6 pb-16 pt-20 md:pt-32">
+        {/* Hero */}
+        <section className="animate-fade-up">
+          <h1 className="font-serif text-[3.5rem] leading-[1] tracking-tight md:text-7xl">
+            Aaron Loh
+          </h1>
+          <div className="mt-5 h-[2px] w-10 bg-orange" />
+          <p className="mt-5 max-w-md text-base leading-relaxed md:text-lg md:leading-relaxed">
+            <span className="font-medium">Software engineer.</span>{" "}
+            <span className="text-grey">
+              Curious about growth, product, and distribution.
+            </span>
+          </p>
+          <div className="mt-3">
+            <StatusBadge text="building in public" />
           </div>
-          <div className="flex flex-col gap-4 md:gap-6">
-            <div className="flex flex-col gap-2">
-              <h1 className="font-serif text-4xl leading-9 md:text-6xl md:leading-none">
-                Aaron Loh
-              </h1>
-              <p className="font-mono text-sm tracking-tight text-grey md:text-base">
-                <span className="text-orange">&gt;</span> {tagline}
-                <span className="animate-blink text-orange">_</span>
-              </p>
-              <StatusBadge text="building in public" />
-            </div>
-            <p className="max-w-[400px] text-sm leading-relaxed text-grey md:max-w-[500px] md:text-base md:leading-relaxed">
-              {headline}
-            </p>
-            <div className="flex flex-col gap-[10px] md:flex-row md:flex-wrap">
-              <SocialLink link="x" />
-              <SocialLink link="linkedin" />
-              <SocialLink link="github" />
-              <SocialLink link="email" />
-            </div>
+          <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2">
+            <SocialLink link="x" />
+            <SocialLink link="linkedin" />
+            <SocialLink link="github" />
+            <SocialLink link="email" />
           </div>
         </section>
 
-        <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-3xl md:text-4xl">
-            What I&apos;m Building
-          </h1>
-          <div className="flex flex-wrap gap-[20px]">
+        {/* Experience */}
+        <section className="mt-24 md:mt-32">
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-grey">
+            Experience
+          </h2>
+          <div className="mt-8 divide-y divide-lightGrey">
+            {Object.keys(experiences).map((experience) => (
+              <WorkExperienceCard
+                key={experience}
+                company={experience as keyof typeof experiences}
+              />
+            ))}
+          </div>
+        </section>
+
+        {/* Projects */}
+        <section className="mt-24 md:mt-32">
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-grey">
+            Selected Work
+          </h2>
+          <div className="mt-8 divide-y divide-lightGrey">
             {Object.keys(projects)
               .slice(0, 5)
               .map((project) => (
@@ -77,46 +82,40 @@ export default function Home() {
                 ))}
             </HiddenProjects>
           </div>
-          <LinkWithUpRightArrow
-            text="View code for this website & star my projects on GitHub"
-            href="https://github.com/aaronloh16"
-          />
-        </section>
-
-        <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-3xl md:text-4xl">Experience</h1>
-          <div className="flex flex-col gap-[20px] md:flex-row md:flex-wrap">
-            {Object.keys(experiences).map((experience) => (
-              <WorkExperienceCard
-                key={experience}
-                company={experience as keyof typeof experiences}
-              />
-            ))}
+          <div className="mt-6">
+            <LinkWithUpRightArrow
+              text="More on GitHub"
+              href="https://github.com/aaronloh16"
+            />
           </div>
         </section>
 
-        <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-3xl md:text-4xl">Certifications</h1>
-          <div className="flex flex-wrap gap-[20px]">
-            {Object.keys(certifications).map((certification) => (
+        {/* Certifications */}
+        <section className="mt-24 md:mt-32">
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-grey">
+            Certifications
+          </h2>
+          <div className="mt-8 divide-y divide-lightGrey">
+            {Object.keys(certifications).map((cert) => (
               <CertificationCard
-                key={certification}
-                certification={certification as keyof typeof certifications}
+                key={cert}
+                certification={cert as keyof typeof certifications}
               />
             ))}
           </div>
         </section>
 
-        <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-3xl md:text-4xl">
-            Let&apos;s Connect
-          </h1>
-          <p className="text-sm text-grey md:text-base">
+        {/* Connect */}
+        <section className="mt-24 md:mt-32">
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-grey">
+            Say Hello
+          </h2>
+          <p className="mt-6 text-sm leading-relaxed text-grey">
             I write about what I&apos;m building and learning. Follow along.
           </p>
-          <div className="flex flex-col gap-[10px]">
+          <div className="mt-4 flex flex-col gap-1.5">
             <LinkWithUpRightArrow
-              text="Follow me on X"
+              text="Follow on X"
               href="https://x.com/aaronloh_"
             />
             <LinkWithUpRightArrow
@@ -124,20 +123,25 @@ export default function Home() {
               href="https://www.linkedin.com/in/aaron-loh26/"
             />
             <LinkWithUpRightArrow
-              text="Check out my GitHub"
+              text="GitHub"
               href="https://github.com/aaronloh16"
             />
           </div>
         </section>
       </div>
-      <footer className="mb-[20px] mt-24">
-        <Link
-          href="https://github.com/aaronloh16"
-          target="_blank"
-          className="font-serif text-lg text-grey transition-colors hover:text-darkTeal focus-visible:text-darkTeal"
-        >
-          View source code
-        </Link>
+
+      <footer className="mt-16 border-t border-lightGrey">
+        <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-6">
+          <span className="text-xs text-grey">Aaron Loh</span>
+          <Link
+            href="https://github.com/aaronloh16"
+            target="_blank"
+            className="text-xs text-grey transition-colors hover:text-darkTeal"
+          >
+            Source
+          </Link>
+        </div>
+        <div className="h-[3px] bg-orange" />
       </footer>
     </main>
   );

@@ -6,8 +6,8 @@ export const experiences = {
     coop: false,
     image: "/work-experience-images/stan.webp",
     description:
-      "selected as a Stan Fellow — exploring developer advocacy, community building, and the intersection of AI and product",
-    tags: ["Developer Advocacy", "Community", "AI", "Product"],
+      "building community growth programs — leading creator initiatives and flagship events that connect people with the product",
+    tags: ["Community", "Growth", "Events", "Product"],
   },
   RBCCashManagement: {
     title: "Software Developer, Cash Management Technology",

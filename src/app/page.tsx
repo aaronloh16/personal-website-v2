@@ -1,11 +1,9 @@
-import CertificationCard from "@/components/CertificationCard";
 import HiddenProjects from "@/components/HiddenProjects";
 import LinkWithUpRightArrow from "@/components/LinkWithUpRightArrow";
 import ProjectCard from "@/components/ProjectCard";
 import SocialLink from "@/components/SocialLink";
 import StatusBadge from "@/components/StatusBadge";
 import WorkExperienceCard from "@/components/WorkExperienceCard";
-import { certifications } from "@/lib/certificationsData";
 import { projects } from "@/lib/projectsData";
 import { experiences } from "@/lib/workExperienceData";
 import Link from "next/link";
@@ -87,21 +85,6 @@ export default function Home() {
               text="More on GitHub"
               href="https://github.com/aaronloh16"
             />
-          </div>
-        </section>
-
-        {/* Certifications */}
-        <section className="mt-24 md:mt-32">
-          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-grey">
-            Certifications
-          </h2>
-          <div className="mt-8 divide-y divide-lightGrey">
-            {Object.keys(certifications).map((cert) => (
-              <CertificationCard
-                key={cert}
-                certification={cert as keyof typeof certifications}
-              />
-            ))}
           </div>
         </section>
 

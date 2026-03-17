@@ -1,10 +1,10 @@
 import LightDarkModeToggle from "@/components/LightDarkModeToggle";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import { Crimson_Pro, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-import { headline, tagline } from "./page";
+import { headline, tagline } from "@/lib/siteData";
 
 const title = `Aaron Loh — ${tagline}`;
 const description = headline;
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: title,
   description: description,
   keywords:
-    "Aaron Loh, Software Engineer, Community, Growth, Distribution, McMaster University, Stan, RBC, Full Stack Developer, Hack the North",
+    "Aaron Loh, Software Engineer, Growth, AI Agents, McMaster University, Stan, RBC, Full Stack Developer, Hack the North",
   creator: "Aaron Loh",
   authors: [{ name: "Aaron Loh" }],
 
@@ -40,18 +40,6 @@ export const metadata: Metadata = {
   },
 };
 
-const crimson_pro = Crimson_Pro({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-crimson-pro",
-});
-
-const dm_sans = DM_Sans({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-dm-sans",
-});
-
 const jetbrains_mono = JetBrains_Mono({
   subsets: ["latin"],
   display: "swap",
@@ -67,16 +55,16 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${crimson_pro.variable} ${dm_sans.variable} ${jetbrains_mono.variable}`}
+      className={jetbrains_mono.variable}
     >
       <Script
         src="https://app.tinyanalytics.io/pixel/DbzDhIpSbsBIoTz9"
         strategy="lazyOnload"
       />
-      <body className="font-sans">
+      <body className="font-mono">
         <ThemeProvider disableTransitionOnChange attribute="data-mode">
           <div className="relative">
-            <div className="fixed right-0 top-0 z-20">
+            <div className="fixed bottom-0 right-0 z-20">
               <LightDarkModeToggle />
             </div>
             {children}

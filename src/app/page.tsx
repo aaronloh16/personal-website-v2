@@ -74,6 +74,7 @@ const interests = [
   "open source",
   "hackathons",
   "building in public",
+  "tennis, golf & triathlon",
 ];
 
 const community = [

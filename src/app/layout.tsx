@@ -21,10 +21,7 @@ export const metadata: Metadata = {
     title: title,
     description: description,
     url: "https://aaronloh.xyz",
-    images: {
-      url: "/opengraph-image.webp",
-      alt: "Aaron Loh info",
-    },
+    images: "/opengraph-image",
     locale: "en_US",
     type: "website",
   },

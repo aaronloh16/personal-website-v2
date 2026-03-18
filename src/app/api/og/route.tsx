@@ -1,21 +1,14 @@
-import { ImageResponse } from "next/og";
+import { ImageResponse } from "@vercel/og";
 
 export const runtime = "edge";
-export const alt = "Aaron Loh — Software Engineer";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
 
-export default async function Image() {
+export async function GET() {
   const fontRegularData = await fetch(
-    new URL(
-      "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2"
-    )
+    "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2"
   ).then((res) => res.arrayBuffer());
 
   const fontBoldData = await fetch(
-    new URL(
-      "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjDV6UsaaDhw.woff2"
-    )
+    "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjDV6UsaaDhw.woff2"
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
@@ -33,6 +26,7 @@ export default async function Image() {
           color: "rgb(228, 228, 225)",
         }}
       >
+        {/* Name */}
         <div
           style={{
             fontSize: 48,
@@ -43,6 +37,7 @@ export default async function Image() {
           Aaron Loh
         </div>
 
+        {/* Location */}
         <div
           style={{
             fontSize: 22,
@@ -53,6 +48,7 @@ export default async function Image() {
           toronto, canada
         </div>
 
+        {/* Current Roles */}
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
             <div
@@ -102,6 +98,7 @@ export default async function Image() {
           </div>
         </div>
 
+        {/* Bio */}
         <div
           style={{
             fontSize: 22,
@@ -116,7 +113,8 @@ export default async function Image() {
       </div>
     ),
     {
-      ...size,
+      width: 1200,
+      height: 630,
       fonts: [
         {
           name: "JetBrains Mono",

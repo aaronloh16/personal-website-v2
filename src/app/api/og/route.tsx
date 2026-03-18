@@ -1,15 +1,33 @@
 import { ImageResponse } from "@vercel/og";
+import fs from "fs";
+import path from "path";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
+
+// Cache the font fetch so it only happens once
+const fontRegular = fetch(
+  "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2"
+).then((res) => res.arrayBuffer());
+
+const fontBold = fetch(
+  "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjDV6UsaaDhw.woff2"
+).then((res) => res.arrayBuffer());
 
 export async function GET() {
-  const fontRegularData = await fetch(
-    "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2"
-  ).then((res) => res.arrayBuffer());
+  const [fontRegularData, fontBoldData] = await Promise.all([
+    fontRegular,
+    fontBold,
+  ]);
 
-  const fontBoldData = await fetch(
-    "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjDV6UsaaDhw.woff2"
-  ).then((res) => res.arrayBuffer());
+  // Read company logos as base64
+  const rbcLogo = fs.readFileSync(
+    path.join(process.cwd(), "public/work-experience-images/rbc.webp")
+  );
+  const stanLogo = fs.readFileSync(
+    path.join(process.cwd(), "public/work-experience-images/stan.webp")
+  );
+  const rbcSrc = `data:image/webp;base64,${rbcLogo.toString("base64")}`;
+  const stanSrc = `data:image/webp;base64,${stanLogo.toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -51,22 +69,12 @@ export async function GET() {
         {/* Current Roles */}
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            <div
-              style={{
-                width: 28,
-                height: 28,
-                borderRadius: 6,
-                background: "linear-gradient(135deg, #005daa, #ffd700)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 14,
-                fontWeight: 700,
-                color: "#fff",
-              }}
-            >
-              R
-            </div>
+            <img
+              src={rbcSrc}
+              width={28}
+              height={28}
+              style={{ borderRadius: 6 }}
+            />
             <span style={{ fontSize: 22 }}>
               Royal Bank of Canada{" "}
               <span style={{ color: "rgb(148, 148, 148)" }}>
@@ -75,22 +83,12 @@ export async function GET() {
             </span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            <div
-              style={{
-                width: 28,
-                height: 28,
-                borderRadius: 6,
-                background: "linear-gradient(135deg, #4f7df9, #6c5ce7)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 14,
-                fontWeight: 700,
-                color: "#fff",
-              }}
-            >
-              S
-            </div>
+            <img
+              src={stanSrc}
+              width={28}
+              height={28}
+              style={{ borderRadius: 6 }}
+            />
             <span style={{ fontSize: 22 }}>
               Stan{" "}
               <span style={{ color: "rgb(148, 148, 148)" }}>Fellow</span>
@@ -119,14 +117,14 @@ export async function GET() {
         {
           name: "JetBrains Mono",
           data: fontRegularData,
-          style: "normal" as const,
-          weight: 400 as const,
+          style: "normal",
+          weight: 400,
         },
         {
           name: "JetBrains Mono",
           data: fontBoldData,
-          style: "normal" as const,
-          weight: 700 as const,
+          style: "normal",
+          weight: 700,
         },
       ],
     }

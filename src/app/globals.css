@@ -46,10 +46,11 @@
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%, 45% { opacity: 1; }
+  50%, 95% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .animate-blink {
-  animation: blink 1s step-end infinite;
+  animation: blink 1.1s ease infinite;
 }

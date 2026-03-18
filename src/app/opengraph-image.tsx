@@ -1,14 +1,21 @@
-import { ImageResponse } from "@vercel/og";
+import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
+export const alt = "Aaron Loh — Software Engineer";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
 
-export async function GET() {
+export default async function Image() {
   const fontRegularData = await fetch(
-    "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2"
+    new URL(
+      "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2"
+    )
   ).then((res) => res.arrayBuffer());
 
   const fontBoldData = await fetch(
-    "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjDV6UsaaDhw.woff2"
+    new URL(
+      "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjDV6UsaaDhw.woff2"
+    )
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
@@ -26,7 +33,6 @@ export async function GET() {
           color: "rgb(228, 228, 225)",
         }}
       >
-        {/* Name */}
         <div
           style={{
             fontSize: 48,
@@ -37,7 +43,6 @@ export async function GET() {
           Aaron Loh
         </div>
 
-        {/* Location */}
         <div
           style={{
             fontSize: 22,
@@ -48,7 +53,6 @@ export async function GET() {
           toronto, canada
         </div>
 
-        {/* Current Roles */}
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
             <div
@@ -98,7 +102,6 @@ export async function GET() {
           </div>
         </div>
 
-        {/* Bio */}
         <div
           style={{
             fontSize: 22,
@@ -113,8 +116,7 @@ export async function GET() {
       </div>
     ),
     {
-      width: 1200,
-      height: 630,
+      ...size,
       fonts: [
         {
           name: "JetBrains Mono",

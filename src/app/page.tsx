@@ -1,8 +1,11 @@
 import TypewriterName from "@/components/TypewriterName";
 import {
   IconBrandGithub,
+  IconBrandInstagram,
   IconBrandLinkedin,
+  IconBrandSpotify,
   IconBrandX,
+  IconBrandYoutube,
   IconMail,
 } from "@tabler/icons-react";
 import Image from "next/image";
@@ -14,6 +17,11 @@ const socialLinks = [
     href: "https://www.linkedin.com/in/aaron-loh26/",
     icon: IconBrandLinkedin,
     label: "LinkedIn",
+  },
+  {
+    href: "https://instagram.com/byaaronloh",
+    icon: IconBrandInstagram,
+    label: "Instagram",
   },
   {
     href: "https://github.com/aaronloh16",
@@ -29,6 +37,14 @@ const socialLinks = [
 
 const currentRoles = [
   {
+    company: "boardy.ai",
+    role: "Growth Engineer",
+    image: "/work-experience-images/boardy.webp",
+  },
+];
+
+const previousRoles = [
+  {
     company: "Royal Bank of Canada",
     role: "Software Developer, Cash Management",
     image: "/work-experience-images/rbc.webp",
@@ -38,13 +54,15 @@ const currentRoles = [
     role: "Fellow",
     image: "/work-experience-images/stan.webp",
   },
-];
-
-const previousRoles = [
   {
     company: "Royal Bank of Canada",
     role: "Software Developer, Global Payments",
     image: "/work-experience-images/rbc.webp",
+  },
+  {
+    company: "Google Developer Groups McMaster",
+    role: "Open Source Team",
+    image: "/work-experience-images/gdsc.webp",
   },
   {
     company: "Royal Bank of Canada",
@@ -57,14 +75,22 @@ const previousRoles = [
     image: "/work-experience-images/boardy.webp",
   },
   {
-    company: "Google Developer Groups McMaster",
-    role: "Open Source Team",
-    image: "/work-experience-images/gdsc.webp",
-  },
-  {
     company: "McSCert",
     role: "Software Research Assistant",
     image: "/work-experience-images/mcscert.webp",
+  },
+];
+
+const podcastLinks = [
+  {
+    href: "https://open.spotify.com/show/7jqmIf7AF7Nkc0IWFf8Ish",
+    icon: IconBrandSpotify,
+    label: "Spotify",
+  },
+  {
+    href: "https://youtube.com/playlist?list=PLouVxSXtM-Dp4V8FWxDRBKR_PSGTtcsN1",
+    icon: IconBrandYoutube,
+    label: "YouTube",
   },
 ];
 
@@ -78,9 +104,9 @@ const interests = [
 ];
 
 const community = [
-  "Stan Fellow — first cohort",
+  "Stan + Boardy Fellow — inaugural cohort",
   "Hack the North — finalist 2024, builder 2025",
-  "Google Developer Groups McMaster",
+  "Google Developer Groups McMaster — Open Source Team",
 ];
 
 export default function Home() {
@@ -128,9 +154,45 @@ export default function Home() {
           className="animate-fade-up mt-6 text-sm leading-relaxed text-grey"
           style={{ animationDelay: "0.15s" }}
         >
-          Software engineer building agentic AI infrastructure. Figuring out
-          how to make useful things reach more people.
+          Growth engineer at Boardy. Building at the intersection of product,
+          growth, and AI — making useful things reach more people.
         </p>
+
+        {/* Shipped (podcast) */}
+        <section
+          className="animate-fade-up mt-12"
+          style={{ animationDelay: "0.175s" }}
+        >
+          <h2 className="text-sm font-bold">shipped (podcast)</h2>
+          <div className="mt-4 flex items-start gap-3">
+            <Image
+              src="/podcast-images/shipped.png"
+              width={40}
+              height={40}
+              alt="Shipped podcast cover"
+              className="h-10 w-10 rounded"
+            />
+            <div className="flex flex-col gap-1.5">
+              <p className="text-sm text-grey">
+                conversations with people actually building things — stories about how they got started and how they're building.
+              </p>
+              <div className="flex items-center gap-3">
+                {podcastLinks.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-1 text-sm text-grey transition-colors hover:text-black"
+                  >
+                    <link.icon size={14} stroke={1.5} />
+                    {link.label.toLowerCase()}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Previously */}
         <section

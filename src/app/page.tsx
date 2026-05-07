@@ -174,7 +174,7 @@ export default function Home() {
             />
             <div className="flex flex-col gap-1.5">
               <p className="text-sm text-grey">
-                conversations with people actually building things — stories about how they got started and how they&apos;re building.
+                conversations with people actually building things — stories about how they got started and how they're building.
               </p>
               <div className="flex items-center gap-3">
                 {podcastLinks.map((link) => (

@@ -1,23 +1,33 @@
 export const experiences = {
+  BoardyGrowth: {
+    title: "Growth Engineer",
+    company: "boardy.ai",
+    date: "May 2026 - Present",
+    coop: false,
+    image: "/work-experience-images/boardy.webp",
+    description:
+      "joining the team that ran my fall fellowship — building at the intersection of product, growth, and AI to help boardy reach more people",
+    tags: ["Growth", "AI", "Full-stack"],
+  },
   StanFellow: {
     title: "Fellow",
     company: "Stan",
-    date: "Mar 2026 - Present",
+    date: "Mar 2026 - Apr 2026",
     coop: false,
     image: "/work-experience-images/stan.webp",
     description:
-      "building in public as part of the first-ever Stan Fellow cohort, sharing the journey, creating content, and connecting with builders and creators along the way",
+      "built in public as part of the first-ever Stan Fellow cohort, sharing the journey, creating content, and connecting with builders and creators along the way",
     tags: ["Community", "Growth", "Content"],
   },
   RBCCashManagement: {
     title: "Software Developer, Cash Management Technology",
     company: "Royal Bank of Canada",
-    date: "Jan 2026 - Present",
+    date: "Jan 2026 - Apr 2026",
     coop: true,
     image: "/work-experience-images/rbc.webp",
     description:
-      "building a modern digital experience for commercial clients to manage their cash management needs",
-    tags: ["Angular", "Spring Boot"]
+      "built internal AI tooling and full-stack features (Spring Boot services + TypeScript/Angular frontends) for RBC's cash management platform serving commercial clients",
+    tags: ["Spring Boot", "TypeScript", "Angular", "AI Tooling"],
   },
   Boardy: {
     title: "Fellow",
